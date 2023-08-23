@@ -19,12 +19,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-/*
-db.facilities = require('./facility.model.js')(sequelize, Sequelize);
-db.patients = require('./patient.model')(sequelize, Sequelize);
-db.records = require('./record.model')(sequelize, Sequelize);
-db.treatments = require('./treatment.model')(sequelize, Sequelize);
-db.weights = require('./weights.model')(sequelize, Sequelize);
-*/
+db.records = require('./record-model.js')(sequelize, Sequelize);
 
 module.exports = db;
