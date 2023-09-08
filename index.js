@@ -27,15 +27,13 @@ app.use((req, res, next) => {
 });
 */
 
-/*
 const db = require('./models');
 db.sequelize.sync({})
     .then(() => {
         console.log('Setting up database if not present');
     });
-*/
 
-//require('./routes/report.routes')(app);
+require('./routes/routes')(app);
 
 app.get('/', (req, res) => {
     res.send('Hello World!')

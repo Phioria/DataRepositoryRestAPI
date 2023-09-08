@@ -3,6 +3,8 @@ module.exports = (sequelize, Sequelize) => {
         rid: {
             type: Sequelize.UUID,
             defaultValue: Sequelize.UUIDV4,
+            //defaultValue: Sequelize.literal('uuid_generate_v4()'),
+            allowNull: false,
             primaryKey: true
         },
         dataset: {
